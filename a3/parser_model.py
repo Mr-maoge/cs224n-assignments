@@ -47,7 +47,7 @@ class ParserModel(nn.Module):
         self.embed_size = embeddings.shape[1]
         self.hidden_size = hidden_size
         self.pretrained_embeddings = nn.Embedding(embeddings.shape[0], self.embed_size)
-        self.pretrained_embeddings.weight = nn.Parameter(torch.tensor(embeddings))
+        self.pretrained_embeddings.weight = nn.Parameter(torch.Tensor(embeddings))
 
         ### YOUR CODE HERE (~5 Lines)
         ### TODO:
@@ -71,8 +71,11 @@ class ParserModel(nn.Module):
         ###     Linear Layer: https://pytorch.org/docs/stable/nn.html#torch.nn.Linear
         ###     Xavier Init: https://pytorch.org/docs/stable/nn.html#torch.nn.init.xavier_uniform_
         ###     Dropout: https://pytorch.org/docs/stable/nn.html#torch.nn.Dropout
-
-
+        self.embed_to_hidden = nn.Linear(self.embed_size*self.n_features,self.hidden_size)
+        nn.init.xavier_uniform_(self.pretrained_embeddings.weight , gain = 1)
+        self.dropout = nn.Dropout(0.5)
+        self.hidden_to_logits = nn.Linear(self.hidden_size,self.n_classes)
+        nn.init.xavier_uniform_(self.hidden_to_logits.weight, gain=1)
         ### END YOUR CODE
 
     def embedding_lookup(self, t):
@@ -103,8 +106,9 @@ class ParserModel(nn.Module):
         ###  Please see the following docs for support:
         ###     Embedding Layer: https://pytorch.org/docs/stable/nn.html#torch.nn.Embedding
         ###     View: https://pytorch.org/docs/stable/tensors.html#torch.Tensor.view
-
-
+        batch_size = t.shape[0]
+        x = self.pretrained_embeddings(t)
+        x = x.view(batch_size,-1)
         ### END YOUR CODE
         return x
 
@@ -141,7 +145,8 @@ class ParserModel(nn.Module):
         ###
         ### Please see the following docs for support:
         ###     ReLU: https://pytorch.org/docs/stable/nn.html?highlight=relu#torch.nn.functional.relu
-
-
+        t = self.embedding_lookup(t)
+        t = self.dropout(F.relu(self.embed_to_hidden(t)))
+        logits = self.hidden_to_logits(t)
         ### END YOUR CODE
         return logits

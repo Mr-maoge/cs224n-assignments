@@ -30,7 +30,9 @@ class PartialParse(object):
         ###
         ### Note: The root token should be represented with the string "ROOT"
         ###
-
+        self.stack = ["ROOT"]
+        self.buffer =  sentence[:]
+        self.dependencies = []
 
         ### END YOUR CODE
 
@@ -49,8 +51,17 @@ class PartialParse(object):
         ###         1. Shift
         ###         2. Left Arc
         ###         3. Right Arc
-
-
+        if transition=="S":
+            assert len(self.buffer)>0 , "length of buffer is 0 ,you can't do SHIFT operation"
+            self.stack.append(self.buffer.pop(0))
+        elif transition=="LA":
+            assert len(self.stack)>=2 , "length of stack is less than 2 ,you can't do LEFT-ARC operation"
+            self.dependencies.append((self.stack[-1],self.stack[-2]))
+            self.stack.pop(-2)
+        elif transition=="RA":
+            assert len(self.stack) >= 2, "length of stack is less than 2 ,you can't do RIGHT-ARC operation"
+            self.dependencies.append((self.stack[-2], self.stack[-1]))
+            self.stack.pop(-1)
         ### END YOUR CODE
 
     def parse(self, transitions):
@@ -100,7 +111,25 @@ def minibatch_parse(sentences, model, batch_size):
     ###             contains references to the same objects. Thus, you should NOT use the `del` operator
     ###             to remove objects from the `unfinished_parses` list. This will free the underlying memory that
     ###             is being accessed by `partial_parses` and may cause your code to crash.
-
+    # size = len(sentences)
+    # batchs = size // batch_size
+    # sep = [batch_size * i for i in range(batchs)] + [size]
+    # for i in range(len(sep) - 1):
+    #     if sep[i] != sep[i + 1]:
+    #         batch_sentense = sentences[sep[i]:sep[i + 1]]
+    partial_parses = [PartialParse(o) for o in sentences]
+    unfinished_parses = partial_parses[:]
+    while len(unfinished_parses)>0:
+        transitions = model.predict(unfinished_parses[:batch_size])
+        complete_lis = []
+        for i in range(len(unfinished_parses[:batch_size])):
+            p = unfinished_parses[i]
+            p.parse_step(transitions[i])
+            if len(p.stack)==1 and len(p.buffer)==0:
+                complete_lis.append(i)
+        for i in complete_lis[::-1]:
+            unfinished_parses.pop(i)
+    dependencies = [p.dependencies for p in partial_parses]
 
     ### END YOUR CODE
 
