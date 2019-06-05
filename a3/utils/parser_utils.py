@@ -17,8 +17,8 @@ from tqdm import tqdm
 import torch
 import numpy as np
 
-P_PREFIX = '<p>:'
-L_PREFIX = '<l>:'
+P_PREFIX = '<p>:'   #POS_PREFIX
+L_PREFIX = '<l>:'   #LABEL_PREFIX
 UNK = '<UNK>'
 NULL = '<NULL>'
 ROOT = '<ROOT>'
@@ -180,12 +180,12 @@ class Parser(object):
         l1 = ex['label'][i1]
 
         if self.unlabeled:
-            if (i1 > 0) and (h1 == i0):
+            if (i1 > 0) and (h1 == i0):     #LEFT-ARC
                 return 0
             elif (i1 >= 0) and (h0 == i1) and \
-                 (not any([x for x in buf if ex['head'][x] == i0])):
+                 (not any([x for x in buf if ex['head'][x] == i0])): #RIGHT-ARC
                 return 1
-            else:
+            else:   # SHIFT
                 return None if len(buf) == 0 else 2
         else:
             if (i1 > 0) and (h1 == i0):

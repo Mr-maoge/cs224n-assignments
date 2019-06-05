@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9a36d2b-84aa-488d-8305-8d222d0881b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../a2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a2/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../a2/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a2/sgd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../a2/sgd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser_transitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser_transitions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/parser_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/parser_utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,13 +16,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
+            <state relative-caret-position="432">
+              <caret line="152" selection-start-line="152" selection-end-line="152" />
               <folding>
                 <element signature="e#187#200#0" expanded="true" />
+                <element signature="e#326#8232#0" />
                 <element signature="e#326#1341#1" />
-                <element signature="e#3733#5625#0" />
-                <element signature="e#6108#8193#0" />
               </folding>
             </state>
           </provider>
@@ -36,19 +30,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser_transitions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="181" selection-start-line="181" selection-end-line="181" />
+            <state relative-caret-position="351">
+              <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
               <folding>
-                <element signature="e#230#2982#0" />
+                <element signature="e#230#3510#0" />
                 <element signature="e#268#482#1" />
-                <element signature="e#3601#6207#0" />
-                <element signature="e#5274#5939#0" />
-                <element signature="e#5969#6440#0" />
-                <element signature="e#6465#7118#0" />
-                <element signature="e#7151#7537#0" />
-                <element signature="e#7588#7811#0" />
-                <element signature="e#7846#8786#0" />
-                <element signature="e#10369#10850#0" />
+                <element signature="e#1551#2871#0" />
+                <element signature="e#2915#3510#0" />
+                <element signature="e#3568#6767#0" />
+                <element signature="e#6866#7531#0" />
+                <element signature="e#7561#8032#0" />
+                <element signature="e#8057#8710#0" />
+                <element signature="e#8743#9129#0" />
+                <element signature="e#9180#9403#0" />
+                <element signature="e#9438#10378#0" />
+                <element signature="e#10412#10854#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/general_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1485">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="e#165#175#0" expanded="true" />
+                <element signature="e#1914#2006#0" />
+                <element signature="e#2057#2445#0" />
               </folding>
             </state>
           </provider>
@@ -57,25 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/parser_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="422" selection-start-line="422" selection-end-line="422" />
-              <folding>
-                <element signature="e#990#3214#0" />
-                <element signature="e#3259#3936#0" />
-                <element signature="e#4000#6986#0" />
-                <element signature="e#7038#7978#0" />
-                <element signature="e#8030#9258#0" />
-                <element signature="e#9308#9502#0" />
-                <element signature="e#9564#10796#0" />
-                <element signature="e#10896#11000#0" />
-                <element signature="e#11049#11688#0" />
-                <element signature="e#11755#12599#0" />
-                <element signature="e#12650#12865#0" />
-                <element signature="e#12898#13596#0" />
-                <element signature="e#13638#13838#0" />
-                <element signature="e#13889#15854#0" />
-                <element signature="e#15889#16246#0" />
-              </folding>
+            <state relative-caret-position="9099">
+              <caret line="346" column="23" selection-start-line="346" selection-start-column="23" selection-end-line="346" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -83,8 +76,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+            <state>
+              <caret line="143" selection-start-line="143" selection-end-line="143" />
+              <folding>
+                <element signature="e#154#183#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,6 +96,8 @@
         <option value="$PROJECT_DIR$/parser_transitions.py" />
         <option value="$PROJECT_DIR$/parser_model.py" />
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/utils/parser_utils.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions" />
       </list>
     </option>
   </component>
@@ -125,7 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,13 +130,25 @@
               <item name="a3" type="b2602c69:ProjectViewProjectNode" />
               <item name="a3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="a3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="a3" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="a3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="a3" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -164,6 +173,9 @@
       <module name="a3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\Thinkpad\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
       <option name="IS_MODULE_SDK" value="false" />
@@ -205,6 +217,9 @@
       <module name="a3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\Thinkpad\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -243,32 +258,36 @@
       <updated>1558870494173</updated>
       <workItem from="1558870499419" duration="1409000" />
       <workItem from="1559269474425" duration="1217000" />
-      <workItem from="1559289083877" duration="12092000" />
+      <workItem from="1559289083877" duration="12824000" />
+      <workItem from="1559354810770" duration="8792000" />
+      <workItem from="1559400908960" duration="648000" />
+      <workItem from="1559638074895" duration="370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14718000" />
+    <option name="totallyTimeSpent" value="25260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21136364" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1621212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32838285" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924242" weight="0.21452145" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007576" side_tool="true" weight="0.27722773" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.33333334" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.28382838" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -282,55 +301,13 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/a3$parser_utils.coverage" NAME="parser_utils Coverage Results" MODIFIED="1559295058392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/a3$parser_transitions.coverage" NAME="parser_transitions Coverage Results" MODIFIED="1559290566768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/a3$run.coverage" NAME="run Coverage Results" MODIFIED="1559358211570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-517403562/sys.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="584" selection-start-line="584" selection-end-line="584" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser_transitions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="181" selection-start-line="181" selection-end-line="181" />
-          <folding>
-            <element signature="e#230#2982#0" />
-            <element signature="e#268#482#1" />
-            <element signature="e#3601#6207#0" />
-            <element signature="e#5274#5939#0" />
-            <element signature="e#5969#6440#0" />
-            <element signature="e#6465#7118#0" />
-            <element signature="e#7151#7537#0" />
-            <element signature="e#7588#7811#0" />
-            <element signature="e#7846#8786#0" />
-            <element signature="e#10369#10850#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/parser_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="422" selection-start-line="422" selection-end-line="422" />
-          <folding>
-            <element signature="e#990#3214#0" />
-            <element signature="e#3259#3936#0" />
-            <element signature="e#4000#6986#0" />
-            <element signature="e#7038#7978#0" />
-            <element signature="e#8030#9258#0" />
-            <element signature="e#9308#9502#0" />
-            <element signature="e#9564#10796#0" />
-            <element signature="e#10896#11000#0" />
-            <element signature="e#11049#11688#0" />
-            <element signature="e#11755#12599#0" />
-            <element signature="e#12650#12865#0" />
-            <element signature="e#12898#13596#0" />
-            <element signature="e#13638#13838#0" />
-            <element signature="e#13889#15854#0" />
-            <element signature="e#15889#16246#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -343,23 +320,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/en-cw.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test.conll">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test.gold.conll">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dev.conll">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/train.conll">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="243">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parser_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
+        <state relative-caret-position="432">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
           <folding>
             <element signature="e#187#200#0" expanded="true" />
+            <element signature="e#326#8232#0" />
             <element signature="e#326#1341#1" />
-            <element signature="e#3733#5625#0" />
-            <element signature="e#6108#8193#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser_transitions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+          <folding>
+            <element signature="e#230#3510#0" />
+            <element signature="e#268#482#1" />
+            <element signature="e#1551#2871#0" />
+            <element signature="e#2915#3510#0" />
+            <element signature="e#3568#6767#0" />
+            <element signature="e#6866#7531#0" />
+            <element signature="e#7561#8032#0" />
+            <element signature="e#8057#8710#0" />
+            <element signature="e#8743#9129#0" />
+            <element signature="e#9180#9403#0" />
+            <element signature="e#9438#10378#0" />
+            <element signature="e#10412#10854#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/general_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#165#175#0" expanded="true" />
+            <element signature="e#1914#2006#0" />
+            <element signature="e#2057#2445#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/parser_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9099">
+          <caret line="346" column="23" selection-start-line="346" selection-start-column="23" selection-end-line="346" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+        <state>
+          <caret line="143" selection-start-line="143" selection-end-line="143" />
+          <folding>
+            <element signature="e#154#183#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
